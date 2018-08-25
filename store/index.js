@@ -26,8 +26,16 @@ StoreDB.settings({ timestampsInSnapshots: true });
 
 const createStore = () => {
   return new Vuex.Store({
-    state: {},
-    getters: {},
+    state: {
+      user: {
+        uid: ""
+      }
+    },
+    getters: {
+      isUserLoggedIn(state) {
+        return state.user.uid != "" ? true : false;
+      }
+    },
     mutations: {},
     actions: {}
   });
