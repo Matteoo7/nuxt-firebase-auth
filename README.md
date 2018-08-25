@@ -12,6 +12,19 @@
 - [x] firebase
 - [x] dotenv
 
+## Get Started
+Create `.env` file in root folder with the following details from Firebase:
+
+.env
+```
+API_KEY="<YOUR-PROJECT-API>"
+AUTH_DOMAIN="<YOUR-PROJECT-ID>.firebaseapp.com"
+DATABASE_URL="https://<YOUR-PROJECT-ID>.firebaseio.com"
+PROJECT_ID="<YOUR-PROJECT-ID>"
+STORAGE_BUCKET="<YOUR-PROJECT-ID>.appspot.com"
+MESSAGING_SENDER_ID="<YOUR-PROJECT-SENDER-ID>"
+```
+
 ## Build Setup
 
 ``` bash
