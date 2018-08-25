@@ -1,3 +1,4 @@
+require("dotenv").config();
 const pkg = require("./package");
 
 const nodeExternals = require("webpack-node-externals");
@@ -76,6 +77,16 @@ module.exports = {
           data: {}
         }
       });
+    }
+  },
+  env: {
+    FIREBASE_CONFIG: {
+      apiKey: process.env.API_KEY,
+      authDomain: process.env.AUTH_DOMAIN,
+      databaseURL: process.env.DATABASE_URL,
+      projectId: process.env.PROJECT_ID,
+      storageBucket: process.env.STORAGE_BUCKET,
+      messagingSenderId: process.env.MESSAGING_SENDER_ID
     }
   }
 };
