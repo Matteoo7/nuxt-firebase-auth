@@ -1,6 +1,16 @@
 # auth-6
 
-> My cat&#39;s meow Nuxt.js project
+> Nuxt App with Firebase auth as a plugin and middleware added in
+
+## Dependencies
+- [x] create-nuxt-app
+    * [x] vuetify
+    * [ ] axios
+    * [x] es-lint
+- [x] pug
+- [x] pug-plain-loader
+- [x] firebase
+- [x] dotenv
 
 ## Build Setup
 
